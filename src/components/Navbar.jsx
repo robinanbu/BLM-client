@@ -13,7 +13,7 @@ const Navbar = () => {
                 <div className="w-[80%] h-full flex justify-center items-center flex-row">
                     <div className='w-1/2 flex h-full justify-start items-center font-bold text-xl text-red-600'>Blood Report Management System</div>
                     <div className='pl- w-1/2 flex h-full justify-end items-center'>
-                        <button className='flex items-center space-x-2 h-9 w-auto px-4 text-red-600 font-bold  border-red-600  hover:text-red-700' onClick={() => setvisible(true)}>
+                        <button className='flex items-center space-x-2 h-9 w-auto px-4 text-red-600 font-bold  border-red-600  hover:text-red-700' onClick={() => navigate("/Login")}>
                             <User2 className='h-9 w-10' />
                             <p>Login</p>
                         </button>
@@ -22,33 +22,6 @@ const Navbar = () => {
                 </div>
 
             </div>
-            {
-                visible&&(
-                    <>
-                        <div className="h-screen w-screen absolute top-0 left-0 bg-black/25 flex justify-center items-center z-50">
-                            <div className=" h-[50%] w-[30%] bg-red z-50 flex flex-col  bg-white  shadow-lg rounded-md">
-                                <div className="w-full h-[15%] flex flex-row justify-start px-10 items-center border-2 text-red-600 bg-[#ffe7cd] text-xl font-bold ">
-                                    <div className="w-1/2">
-                                        User type
-                                    </div>
-                                    <div className="w-1/2 flex justify-end ">
-                                        <CircleX onClick={() => setvisible(!visible)}/>
-                                    </div>
-                                </div>
-                                <div className="flex flex-col items-center mt-10 space-y-4">
-                    <button className="w-2/3 bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"onClick={() => navigate("/employeelogin")}>
-                        Employee Login
-                    </button>
-                    <button className="w-2/3 bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"onClick={() => navigate("/patientlogin")}>
-                        User Login
-                    </button>
-                </div>
-                                
-                            </div>
-                        </div>
-                    </>
-                )
-            }
             
         </>
     )

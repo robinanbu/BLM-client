@@ -1,5 +1,5 @@
 import { useState, useRef } from "react";
-import { requestBlood } from "../services/Api";
+// import { requestBlood } from "../services/Api";
 
 const Patientdashboard = () => {
   const [visible, setVisible] = useState(false);
@@ -14,7 +14,7 @@ const Patientdashboard = () => {
 
   const handleBloodGroupClick = (group) => {
     setSelectedBloodGroup(group);
-    formRef.current.bloodGroup.value = group; // Set the value in the form
+    formRef.current.bloodGroup.value = group; 
   };
 
   const handleSubmit = async (e) => {
