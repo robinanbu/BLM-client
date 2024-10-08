@@ -4,6 +4,7 @@ import x from '../assets/images/download.jpeg'
 import thankyou from '../assets/images/thankyou.png'
 import donate from '../assets/images/donate.png'
 import register from '../assets/images/register.png'
+
 const Home = () => {
     return (
         <div className="min-h-screen w-screen bg-white">
@@ -69,11 +70,9 @@ const Home = () => {
                             <h4 className="text-lg font-semibold text-gray-900">- Tyler Durden</h4>
                         </div>
                     </div>
-                    {/* Add a simple carousel or more testimonials */}
                 </div>
             </section>
 
-            {/* Footer Section */}
             <footer className="bg-gray-800 text-white py-8">
                 <div className="px-6 lg:px-20 flex flex-col lg:flex-row justify-between items-center">
                     <div className="text-center lg:text-left mb-4 lg:mb-0">

@@ -22,23 +22,17 @@ const Login = () => {
             if(response.status === 200){
                 if(response.data === "employee")
                 {
-                    alert("I'm Emp");
+                    navigate("/employeedashboard")
                 }
                else  if(response.data === "user")
                 {
-                    alert("I'm User");
+                    navigate("/patientdashboard")
                 }
             }
         } catch (error) {
             
         }
-            console.log(email,password)
-        // if(email && password){
-        //     navigate("/employeedashboard");
-        // }
-        // else{
-        //     alert("Please fill in both email and password.");
-        // }
+        console.log(email,password)
     }
 
   return (

@@ -64,7 +64,6 @@ const Employeedashboard = () => {
         Employee Dashboard
       </h1>
 
-      {/* Inventory Cards */}
       <div className="grid grid-cols-4 gap-4 mb-10">
         {Object.entries(bloodInventory).map(([group, units]) => (
           <div key={group} className="bg-white p-4 rounded shadow-lg">
@@ -74,7 +73,6 @@ const Employeedashboard = () => {
         ))}
       </div>
 
-      {/* Table */}
       <div className="bg-white p-6 rounded shadow-lg">
         <h2 className="text-2xl font-bold text-gray-800 mb-4">
           Blood Requests

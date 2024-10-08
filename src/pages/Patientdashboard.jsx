@@ -1,10 +1,10 @@
 import { useState, useRef } from "react";
-// import { requestBlood } from "../services/Api";
+import { requestBlood } from "../services/Api";
 
 const Patientdashboard = () => {
   const [visible, setVisible] = useState(false);
-  const [selectedBloodGroup, setSelectedBloodGroup] = useState(null); // Track selected blood group
-  const formRef = useRef(null); // Ref to the form element
+  const [selectedBloodGroup, setSelectedBloodGroup] = useState(null);
+  const formRef = useRef(null);
 
   const bloodGroups = ["A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-"];
 

@@ -4,7 +4,7 @@ import React, {useState} from 'react'
 import { useNavigate } from 'react-router-dom'
 
 const Navbar = () => {
-    const [visible, setvisible] = useState(false)
+    // const [visible, setvisible] = useState(false)
     const navigate = useNavigate();
 
     return (
