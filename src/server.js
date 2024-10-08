@@ -1,1 +1,1 @@
-export const server_API = "http://localhost:3333/api/v1/blood";
+export const server_API = "https://server-blm.onrender.com/api/v1/blood";
