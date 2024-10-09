@@ -18,9 +18,9 @@ const Home = () => {
                         Join us in making a difference. Your blood donation can help save someone’s life. Be a hero today!
                     </p>
                     <div className="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-4">
-                        <button className="bg-red-500 text-white px-8 py-3 rounded-md hover:bg-red-600 transition duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
+                        {/* <button className="bg-red-500 text-white px-8 py-3 rounded-md hover:bg-red-600 transition duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
                             Donate Now
-                        </button>
+                        </button> */}
                         <a href="https://www.kokilabenhospital.com/blog/world-blood-donor-day/" target="_blank" rel="noopener noreferrer">
                             <button className="bg-gray-300 text-gray-800 px-8 py-3 rounded-md hover:bg-gray-400 transition duration-300 shadow-md hover:shadow-lg transform hover:scale-105">
                                 Learn More

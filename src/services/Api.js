@@ -12,9 +12,7 @@ export const requestBlood = async (formData) => {
   }
 };
 
-// const API = "http://localhost:3333";
-
-const userLogin = (loginData) => axios.post(`${server_API1}/login`, loginData);
+const userLogin = (loginData) => axios.post("https://server-blm.onrender.com/api/v1/user/login", loginData);
 console.log(userLogin)
 
 export { userLogin };

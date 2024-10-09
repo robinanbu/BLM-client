@@ -18,16 +18,15 @@ const Login = () => {
         }
         try {
             const response = await userLogin(logindata)
-            console.log(response.data.role)
+            console.log(response.data)
             // if(response.status === 200){
-                if(response.data.role === "employee")
+                if(response.data === "employee")
                 {
                     navigate("/employeedashboard")
                 }
-               else  if(response.data.role === "user")
+               else  if(response.data === "user")
                 {
                     navigate("/patientdashboard")
-                    // console.log("first")
                 }
             // }
         } catch (error) {
