@@ -18,17 +18,17 @@ const Login = () => {
         }
         try {
             const response = await userLogin(logindata)
-            console.log(response.data)
-            // if(response.status === 200){
-                if(response.data === "employee")
+            console.log(response.data.role)
+            if(response.status === 200){
+                if(response.data.role === "employee")
                 {
                     navigate("/employeedashboard")
                 }
-               else  if(response.data === "user")
+               else  if(response.data.role === "user")
                 {
                     navigate("/patientdashboard")
                 }
-            // }
+            }
         } catch (error) {
             
         }

@@ -4,7 +4,7 @@ import Weblayout from "./layouts/Weblayout"
 import Login from "./components/Login";
 import Patientdashboard from"./pages/Patientdashboard";
 import Employeedashboard from"./pages/Employeedashboard";
-import Test from "./pages/Test";
+// import Test from "./pages/Test";
 
 const App=() => {
 
@@ -14,7 +14,7 @@ const App=() => {
       <Routes>
         <Route element={<Weblayout />}>
           <Route path="/" element={<Home />} />
-          <Route path="/test" element={<Test />} />
+          {/* <Route path="/test" element={<Test />} /> */}
           <Route path="/login" element={<Login />} />
           <Route path="/patientdashboard" element={<Patientdashboard />} />
           <Route path="/employeedashboard" element={<Employeedashboard />} />
