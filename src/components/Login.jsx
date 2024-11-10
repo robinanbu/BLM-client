@@ -30,7 +30,9 @@ const Login = () => {
                 }
             }
         } catch (error) {
-            
+            alert("Invalid login 😒...Do register")
+            navigate("/register")
+
         }
         console.log(email,password)
     }
