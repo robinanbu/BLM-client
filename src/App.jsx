@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from "./pages/Home"
 import Weblayout from "./layouts/Weblayout"
 import Login from "./components/Login";
+import Register from './components/Register';
 import Patientdashboard from"./pages/Patientdashboard";
 import Employeedashboard from"./pages/Employeedashboard";
 // import Test from "./pages/Test";
@@ -16,6 +17,7 @@ const App=() => {
           <Route path="/" element={<Home />} />
           {/* <Route path="/test" element={<Test />} /> */}
           <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
           <Route path="/patientdashboard" element={<Patientdashboard />} />
           <Route path="/employeedashboard" element={<Employeedashboard />} />
         </Route>

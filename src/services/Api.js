@@ -12,7 +12,21 @@ export const requestBlood = async (formData) => {
   }
 };
 
-const userLogin = (loginData) => axios.post("https://server-blm.onrender.com/api/v1/user/login", loginData);
+const userLogin = (loginData) => axios.post(`${server_API1}/login`, loginData);
 console.log(userLogin)
-
 export { userLogin };
+
+export const userRegister = async (registerData) => {
+  try {
+    const response = await axios.post(`${server_API1}/register`,registerData);
+    return response.data;
+  } catch (error) {
+    console.error("Error submitting form:", error);
+    const eM =error.response?.data?.message || "an unknown error occured";
+    alert(eM)
+    throw new Error(eM);
+  }
+}
+
+// const userRegister = (registerData) => axios.post(`${server_API1}/register`,registerData);
+// export { userRegister };
