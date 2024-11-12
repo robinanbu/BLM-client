@@ -2,6 +2,8 @@ import React, { useRef } from 'react'
 import { CircleX } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
 import { userLogin } from '../services/Api';
+import {Toaster, toast} from 'sonner';
+
 
 
 
@@ -30,8 +32,9 @@ const Login = () => {
                 }
             }
         } catch (error) {
-            alert("Invalid login 😒...Do register")
-            navigate("/register")
+            alert("Invalid login 😒... Do register")
+            // toast.error("Invalid login 😒...Do register", { position: "top-center" });
+            navigate("/register");
 
         }
         console.log(email,password)

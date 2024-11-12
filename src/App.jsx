@@ -5,6 +5,8 @@ import Login from "./components/Login";
 import Register from './components/Register';
 import Patientdashboard from"./pages/Patientdashboard";
 import Employeedashboard from"./pages/Employeedashboard";
+import Donar from"./pages/Donar"
+
 // import Test from "./pages/Test";
 
 const App=() => {
@@ -18,6 +20,7 @@ const App=() => {
           {/* <Route path="/test" element={<Test />} /> */}
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/donar" element={<Donar />} />
           <Route path="/patientdashboard" element={<Patientdashboard />} />
           <Route path="/employeedashboard" element={<Employeedashboard />} />
         </Route>
