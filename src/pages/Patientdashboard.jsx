@@ -6,7 +6,7 @@ const Patientdashboard = () => {
   const [selectedBloodGroup, setSelectedBloodGroup] = useState(null);
   const formRef = useRef(null);
 
-  const bloodGroups = ["A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-"];
+  const bloodGroups = ["A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-","A1B+","A1B-"];
 
   const handleRequestBloodClick = () => {
     setVisible(!visible);
@@ -137,7 +137,7 @@ const Patientdashboard = () => {
                         : "bg-gray-100 text-gray-800 hover:bg-red-100"
                     }`}
                   >
-                    <span className="text-2xl">🩸</span>
+                    <span className="text-2xl p-1 bg-gray-100 hover:bg-red-100">🩸</span>
                     {group}
                   </button>
                 ))}

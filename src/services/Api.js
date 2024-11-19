@@ -12,9 +12,9 @@ export const requestBlood = async (formData) => {
   }
 };
 
-const userLogin = (loginData) => axios.post(`${server_API1}/login`, loginData);
-console.log(userLogin)
-export { userLogin };
+// const userLogin = (loginData) => axios.post(`${server_API1}/login`, loginData);
+// console.log(userLogin)
+// export { userLogin };
 
 export const userRegister = async (registerData) => {
   try {
@@ -24,9 +24,20 @@ export const userRegister = async (registerData) => {
     console.error("Error submitting form:", error);
     const eM =error.response?.data?.message || "an unknown error occured";
     alert(eM)
+    console.log(eM)
     throw new Error(eM);
   }
 }
 
-// const userRegister = (registerData) => axios.post(`${server_API1}/register`,registerData);
-// export { userRegister };
+const userLogin = async (loginData) => {
+  try {
+    const response = await axios.post(`${server_API1}/login`,loginData);
+    return response;
+  } catch (error) {
+    console.error("Error submitting form:", error);
+    const status = error.response?.status; 
+    const message =error.response?.data?.message || "an unknown error occured";
+    throw {status,message};
+  }
+}
+export { userLogin };
